@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        /* font-family: 'Work Sans', serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal; */
+      }
+      .navbar {
+        height: 100px;
+        background-color: #74c69d;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 100px;
+      }
+      .start-logo {
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+      }
+      .start-logo img {
+        /* width: 160px; */
+        /* height: 50px; */
+      }
+      .menu {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-family: 'Work Sans', serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+      }
+
+      .menu-bar {
+        display: none;
+      }
+      .header {
+        height: 440px;
+        background-color: #74c69d;
+        padding: 0 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* display: grid;
+        grid-template-columns: 1fr 1fr; */
+      }
+      .header-left p,
+      h1,
+      h6 {
+        color: white;
+      }
+      .header-left p {
+        margin-top: 20px;
+      }
+      .header-left h1 {
+        margin-top: 20px;
+      }
+      .header-left-text {
+        margin-top: 20px;
+      }
+
+      .header-btn {
+        margin-top: 20px;
+        /* padding: 10px 25px; */
+        height: 48px;
+        width: 170px;
+        font-size: 20px;
+        border: none;
+        border-radius: 5px;
+      }
+      .section-1 {
+        height: 370px;
+        /* background-color: #c33434; */
+        margin-top: 30px;
+        text-align: center;
+      }
+      /* .section-1-text {
+        color: white;
+      } */
+      .section-1-text h4 {
+        /* margin-left: 70px; */
+        color: #74c69d;
+      }
+      .section-1-text h2 {
+        color: black;
+        margin-top: 10px;
+      }
+      .section-1-text p {
+        color: black;
+        margin-top: 10px;
+      }
+      .social-media {
+        margin-top: 50px;
+        width: 1300px;
+      }
+      .social-btn {
+        margin-top: 60px;
+        height: 48px;
+        width: 170px;
+        font-size: 20px;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        background-color: black;
+      }
+      .section-1-socialmedia {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      .section-2 {
+        padding: 0 100px;
+        display: flex;
+        align-items: center;
+        gap: 200px;
+        justify-content: space-around;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .section-2-right h1 {
+        color: black;
+      }
+      .section-2-right p {
+        margin-top: 20px;
+      }
+      .section-2-left-2 h1 {
+        color: black;
+      }
+      .section-2-left-2 p {
+        margin-top: 20px;
+      }
+      .section-2-right-2 img {
+        /* margin-top: 100px; */
+      }
+      .section-2-inner {
+        padding: 0 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 50px;
+      }
+      .section-3 {
+        /* height: 500px; */
+        margin-top: 80px;
+        text-align: center;
+      }
+      .section-3-text h4 {
+        color: #74c69d;
+        letter-spacing: 4px;
+      }
+      .section-3-text h2 {
+        color: black;
+        margin-top: 10px;
+        font-size: 40px;
+      }
+
+      .section-3-text p {
+        color: black;
+        margin-top: 10px;
+        font-size: 20px;
+      }
+      .section-3-team {
+        padding: 0 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 25px;
+      }
+      .footer {
+        height: 125px;
+        background-color: #74c69d;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 100px;
+        margin-top: 50px;
+      }
+      .footer-icon {
+        color: white;
+        display: flex;
+        gap: 25px;
+      }
+      .footer-text {
+        color: white;
+        font-size: 20px;
+      }
+      @media (width<700px) {
+        .menu-bar {
+          display: block;
+        }
+        .menu a {
+          display: none;
+        }
+        .navbar {
+          padding: 0 40px;
+          justify-content: space-between;
+        }
+        .header {
+          height: 680px;
+          padding: 0 40px;
+          display: grid;
+          grid-template-columns: 1fr;
+          display: flex;
+          flex-direction: column-reverse;
+        }
+        .header-right img {
+          width: 550px;
+        }
+        .header-left {
+          width: 550px;
+          margin: 20px;
+        }
+        .section-1 {
+          height: 700px;
+        }
+        .section-1-socialmedia {
+          display: grid;
+          place-items: center;
+          margin-top: 50px;
+          flex-direction: column;
+          gap: 40px;
+        }
+        .section-2 {
+          padding: 0 40px;
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+        .section-2-left img {
+          width: 550px;
+        }
+        .section-2-right {
+          width: 400px;
+          margin-top: 20px;
+        }
+        .section-2-inner {
+          padding: 0 40px;
+          display: grid;
+          grid-template-columns: 1fr;
+          display: flex;
+          flex-direction: column-reverse;
+        }
+        .section-2-right-2 img {
+          width: 550px;
+        }
+        .section-2-left-2 {
+          width: 550px;
+          margin-top: 20px;
+        }
+        .section-3 {
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+        .section-3-team {
+          flex-direction: column;
+          justify-content: center;
+        }
+        .section-3-team img {
+          width: 252px;
+        }
+        .footer {
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+        .footer-icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .footer-text {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 14px;
+        }
+      }
+      @media(width<500px){
+        .header-right img {
+          width: 400px;
+        }
+        .header-left {
+          width: 400px;
+        }
+        .section-2-left img {
+          width: 400px;
+        }
+        .section-2-right-2 img {
+          width: 400px;
+        }
+        .section-2-left-2 {
+          width: 400px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="start-logo">
+        <img src="images/Start-logo.png" alt="" />
+      </div>
+      <div class="menu">
+        <a href="task-09.html">Home</a>
+        <a href="task-09-Portfolio.html">Portfolio</a>
+        <a href="task-09-services.html">Services</a>
+        <a href="task-09-contact.html">Contact</a>
+        <img class="menu-bar" src="images/menu-bar.png" alt="" />
+      </div>
+    </div>
+    <div class="header">
+      <div class="header-left">
+        <p>WELCOME</p>
+        <h1>Lorem ipsum dolor sit <br />amet consectetur</h1>
+        <p class="header-left-text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing <br />
+          elit. Suscipit nemo hic quos, ab, dolor aperiam nobis <br />
+          cum est eos error ipsum, voluptate culpa nesciunt <br />
+          delectus iste?
+        </p>
+        <button class="header-btn">Explore</button>
+      </div>
+      <div class="header-right">
+        <img src="images/Group.png" alt="" />
+      </div>
+    </div>
+    <div class="section-1">
+      <div class="section-1-text">
+        <h4>PARTNERS</h4>
+        <h2>Lorem ipsum dolor</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur <br />
+          adipisicing elit.
+        </p>
+      </div>
+      <div class="section-1-socialmedia">
+        <img src="images/google.png" alt="" />
+        <img src="images/microsoft.png" alt="" />
+        <img src="images/airbnb.png" alt="" />
+        <img src="images/facebook.png" alt="" />
+        <img src="images/spotify.png" alt="" />
+      </div>
+      <div class="section-1-btn">
+        <button class="social-btn">Learn More</button>
+      </div>
+    </div>
+    <div class="section-2">
+      <div class="section-2-left">
+        <img src="images/Group-2.png" alt="" />
+      </div>
+      <div class="section-2-right">
+        <h1>
+          Lorem ipsum dolor sit <br />
+          amet consectetur
+        </h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />
+          Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos <br />
+          error ipsum, voluptate culpa nesciunt delectus iste?
+        </p>
+        <div class="section-2-btn">
+          <button class="social-btn">Learn More</button>
+        </div>
+      </div>
+    </div>
+    <div class="section-2-inner">
+      <div class="section-2-left-2">
+        <h1>
+          Lorem ipsum dolor sit <br />
+          amet consectetur
+        </h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />
+          Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos <br />
+          error ipsum, voluptate culpa nesciunt delectus iste?
+        </p>
+        <div class="section-2-btn">
+          <button class="social-btn">Learn More</button>
+        </div>
+      </div>
+      <div class="section-2-right-2">
+        <img src="images/Group-3.png" alt="" />
+      </div>
+    </div>
+    <div class="section-3">
+      <div class="section-3-text">
+        <h4>TEAM</h4>
+        <h2>Our Talents</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur <br />
+          Suscipit nemo hic quos, ab,
+        </p>
+      </div>
+      <div class="section-3-team">
+        <img src="images/CEO.png" alt="" />
+        <img src="images/CTO.png" alt="" />
+        <img src="images/DESINER.png" alt="" />
+        <img src="images/DEVELOPER.png" alt="" />
+      </div>
+      <div class="section-3-btn">
+        <button class="social-btn">View Team</button>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-icon">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-pinterest"></i>
+        <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-brands fa-tiktok"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+      <div class="footer-text">
+        <p>© Start, 2022. All rights reserved.</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        font-family: 'Roboto', serif;
+      }
+
+      .navbar {
+        background-color: #232730;
+        height: 55px;
+        display: flex;
+        padding: 0 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        gap: 23px;
+      }
+
+      .first-menu-items {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+      }
+      .fa-bars {
+        color: white;
+        font-size: 21px;
+        display: none;
+      }
+      .fa-react {
+        font-size: 40px;
+        color: #58c4dc;
+      }
+      .menu-version-text {
+        color: #98a1b3;
+        font-size: 13px;
+      }
+      .menu-version-text:hover {
+        color: #58c4dc;
+        text-decoration: underline;
+      }
+      .input-search-container {
+        width: 63%;
+        position: relative;
+        display: flex;
+        align-items: center;
+      }
+      .input-searchbar {
+        width: 100%;
+        padding: 11px 0;
+        background-color: #333a45;
+        border: none;
+        border-radius: 20px;
+        outline: none;
+      }
+      .input-search-icon {
+        color: #98a1b3;
+        position: absolute;
+        left: 15px;
+      }
+
+      .input-search-text {
+        color: #98a1b3;
+        position: absolute;
+        left: 40px;
+      }
+
+      .search-k-text {
+        background-color: #23272f;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 15px;
+        font-size: 11px;
+        color: #98a1b3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+      }
+
+      .search-c-text {
+        background-color: #23272f;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 40px;
+        font-size: 11px;
+        color: #98a1b3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+      }
+
+      .menu-items-container {
+        display: flex;
+        gap: 38px;
+        align-items: center;
+        color: #ebecf0;
+      }
+
+      .menu-icons-container {
+        display: flex;
+        gap: 23px;
+        align-items: center;
+        color: #ebecf0;
+        font-size: 22px;
+      }
+      .menu-search-icon {
+        display: none;
+      }
+      .body-container {
+        width: 100%;
+        height: 800px;
+        background-color: #23272f;
+      }
+      .body-container {
+        padding-top: 100px;
+        text-align: center;
+      }
+      .react_icon_big {
+        font-size: 100px;
+        color: rgb(0, 193, 196);
+        margin-top: 30px;
+      }
+      .body-container-react {
+        color: white;
+        font-size: 30px;
+        margin-top: 15px;
+      }
+      .body-container-text {
+        color: white;
+        margin-top: 20px;
+      }
+      .btn-left {
+        padding: 10px 20px;
+        border-radius: 30px;
+        background-color: #58c4dc;
+        margin-top: 25px;
+        font-size: 20px;
+      }
+      .btn-right {
+        padding: 10px 20px;
+        border-radius: 30px;
+        background-color: transparent;
+        /* border: none; */
+        border: 1px solid rgb(137, 137, 137);
+        /* border-color: rgb(137, 137, 137); */
+        color: white;
+        font-size: 20px;
+      }
+
+      @media (width <1024px) {
+        .fa-bars {
+          display: inline;
+        }
+
+        .menu-items-container {
+          display: none;
+        }
+        .input-search-container {
+          width: 74%;
+        }
+      }
+
+      @media (width <767px) {
+        .input-search-container {
+          display: none;
+        }
+        .navbar {
+          justify-content: space-between;
+        }
+        .menu-search-icon {
+          display: inline;
+        }
+
+        /* .body-container-text{
+          width: 500px;
+          margin-left: 150px;
+         
+        } */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="first-menu-items">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-brands fa-react"></i>
+        <span class="menu-version-text">v19</span>
+      </div>
+      <div class="input-search-container">
+        <i class="fa-solid fa-magnifying-glass input-search-icon"></i>
+        <span class="input-search-text">Search</span>
+        <input class="input-searchbar" type="text" />
+        <span class="search-k-text">K</span>
+        <span class="search-c-text">⌘</span>
+      </div>
+
+      <div class="menu-items-container">
+        <p>Learn</p>
+        <p>Reference</p>
+        <p>Community</p>
+        <p>Blog</p>
+      </div>
+
+      <div class="menu-icons-container">
+        <i class="fa-solid fa-magnifying-glass menu-search-icon"></i>
+
+        <i class="fa-solid fa-sun"></i>
+        <i class="fa-solid fa-language"></i>
+        <i class="fa-brands fa-github"></i>
+      </div>
+    </div>
+    <div class="body-container">
+      <i class="fa-brands fa-react react_icon_big"></i>
+      <p class="body-container-react"><b>React</b></p>
+      <h1 class="body-container-text">
+        The library for web and native user interfaces
+      </h1>
+      <button class="btn-left">Learn React</button>
+      <button class="btn-right">API Reference</button>
+    </div>
+  </body>
+</html>

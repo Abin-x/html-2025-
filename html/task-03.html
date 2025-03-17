@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <style>
+      body {
+        /* font-family: Arial, sans-serif; */
+        background-color: #fcbad3;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .card {
+        background-color: #ffffff;
+        width: 350px;
+        border-radius: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+
+      .card-header {
+        background-color: #023c57;
+        height: 200px;
+        position: relative;
+      }
+
+      .card-header img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .profile-picture {
+        width: 100px;
+        height: 100px;
+        background-color: #fff;
+        border: 2px solid #fcbad3;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 10);
+      }
+
+      .profile-picture img {
+        width: 60px;
+        height: 60px;
+      }
+
+      .card-body {
+        text-align: center;
+        padding: 60px 20px 20px;
+      }
+
+      .name {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0;
+      }
+
+      .profession {
+        color: #777;
+        font-size: 14px;
+      }
+
+      .stats {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 0;
+      }
+
+      .stats div {
+        text-align: center;
+      }
+
+      .stats div span {
+        display: block;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .stats div p {
+        color: #777;
+        margin: 0;
+      }
+
+      .follow {
+        color: cyan;
+      }
+      .following {
+        color: rgb(0, 98, 255);
+      }
+
+      .follow-button {
+        display: flex;
+        justify-content: center;
+      }
+
+      .follow-button button {
+        background-color: #fdbf11;
+        border: none;
+        border-radius: 20px;
+        color: #fff;
+        padding: 10px 120px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .follow-button button:hover {
+        background-color: #e1a50d;
+      }
+
+      .description {
+        font-size: 14px;
+        color: #555;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-header">
+        <img src="/re650.jpg" />
+        <div class="profile-picture">
+          <img src="/650.jpg" />
+        </div>
+      </div>
+      <div class="card-body">
+        <h2 class="name">Royal Enfield</h2>
+        <p class="profession">Interceptor 650</p>
+        <div class="stats">
+          <div class="follow">
+            <span>12</span>
+            <p>Followers</p>
+          </div>
+          <div class="following">
+            <span>1000</span>
+            <p>Following</p>
+          </div>
+        </div>
+        <div class="follow-button">
+          <button>Follow</button>
+        </div>
+        <p class="description">
+          The Royal Enfield Interceptor 650 is a parallel twin retro-styled
+          motorcycle introduced by Royal Enfield in 2018. It is the first modern
+          twin cylinder motorcycle developed by the company.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+      }
+      @media(width<1000px){
+        .box{
+            background-color: blue;
+            height: 300px;
+            width: 300px;
+        }
+      }
+      @media(width<500px){
+        .box{
+            background-color: green;
+            height: 200px;
+            width: 200px;
+        }
+      }
+      @media(width<500px){
+        h1{
+            display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <h1>Hey User</h1>
+
+  </body>
+</html>

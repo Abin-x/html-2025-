@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @keyframes anim {
+        0% {
+          border-radius: 0;
+          transform: translate(0);
+        }
+        25% {
+          border-radius: 20px;
+          transform: translate(400px, 0);
+        }
+        50% {
+          border-radius: 40px;
+          transform: translate(400px, 400px);
+        }
+        75% {
+          border-radius: 60px;
+          transform: translate(0, 400px);
+        }
+        /* 100% {
+          border-radius: 0;
+          transform: translate(0,0);
+        } */
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-name: anim;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

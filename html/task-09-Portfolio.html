@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        /* font-family: 'Work Sans', serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal; */
+      }
+      .navbar {
+        height: 100px;
+        background-color: #74c69d;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 100px;
+      }
+      .start-logo {
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+      }
+      .start-logo img {
+        /* width: 160px; */
+        /* height: 50px; */
+      }
+      .menu {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-family: 'Work Sans', serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+      }
+
+      .menu-bar {
+        display: none;
+      }
+      .header {
+        height: 200px;
+        /* background-color: #c33434; */
+        margin-top: 30px;
+        text-align: center;
+      }
+      /* .section-1-text {
+        color: white;
+      } */
+      .header-text h4 {
+        color: #74c69d;
+        letter-spacing: 4px;
+      }
+      .header-text h2 {
+        color: black;
+        margin-top: 10px;
+        font-size: 40px;
+      }
+      .header-text p {
+        color: black;
+        margin-top: 10px;
+        font-size: 20px;
+      }
+      .section-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0 100px;
+        gap: 50px;
+      }
+      .section-1 img {
+        width: 640px;
+        height: 365px;
+      }
+      .card-btn {
+        margin-top: 60px;
+        height: 48px;
+        width: 170px;
+        font-size: 20px;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        background-color: black;
+      }
+      .section-1-btn{
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+      }
+      .footer {
+        height: 125px;
+        background-color: #74c69d;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 100px;
+        margin-top: 50px;
+      }
+      .footer-icon {
+        color: white;
+        display: flex;
+        gap: 25px;
+      }
+      .footer-text {
+        color: white;
+        font-size: 20px;
+      }
+      @media (width<700px) {
+        .menu-bar {
+          display: block;
+        }
+        .menu a {
+          display: none;
+        }
+        .navbar {
+          padding: 0 40px;
+          justify-content: space-between;
+        }
+        .section-1 {
+          display: grid;
+          grid-template-columns: 1fr;
+          padding: 0 40px;
+        }
+        .section-1 img {
+          width: 550px;
+        }
+        .footer {
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+        .footer-icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .footer-text {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 14px;
+        }
+      }
+      @media(width<500px){
+        .section-1 img {
+          width: 400px;
+          height: 250px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="start-logo">
+        <img src="images/Start-logo.png" alt="" />
+      </div>
+      <div class="menu">
+        <a href="task-09.html">Home</a>
+        <a href="task-09-Portfolio.html">Portfolio</a>
+        <a href="task-09-services.html">Services</a>
+        <a href="task-09-contact.html">Contact</a>
+        <img class="menu-bar" src="images/menu-bar.png" alt="" />
+      </div>
+    </div>
+    <div class="header">
+      <div class="header-text">
+        <h4>WORKS</h4>
+        <h2>Portfolio</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur <br />
+          adipisicing elit.
+        </p>
+      </div>
+    </div>
+    <div class="section-1">
+      <img src="images/card1.png" alt="" />
+      <img src="images/card2.png" alt="" />
+      <img src="images/card3.png" alt="" />
+      <img src="images/card4.png" alt="" />
+      <img src="images/card5.png" alt="" />
+      <img src="images/card6.png" alt="" />
+      <img src="images/card7.png" alt="" />
+      <img src="images/card8.png" alt="" />
+    </div>
+    <div class="section-1-btn">
+      <button class="card-btn">Learn More</button>
+    </div>
+    <div class="footer">
+      <div class="footer-icon">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-pinterest"></i>
+        <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-brands fa-tiktok"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+      <div class="footer-text">
+        <p>© Start, 2022. All rights reserved.</p>
+      </div>
+    </div>
+  </body>
+</html>
